@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe6ea;
+            text-align: center;
+            padding: 40px;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #ff4d6d;
+            color: white;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff4d6d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="box" id="question">
+    <h1><p> Shu </p>
+Will you be my Valentine? ❤️</h1>
+    <button onclick="showMessage()">Yes</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="box" id="message" style="display:none;">
+    <p>
+        Seven beautiful years with you, and my heart still chooses you every single day.
+        Sometimes I still wonder how I got so blessed.
+    </p>
+
+    <p>
+        From the day you came into my life, you became my strength without even trying.
+    </p>
+
+    <p>
+        You helped me grow when I didn’t believe in myself.<br>
+        You held me when I was sad, without asking questions.<br>
+        You understood me even in my silence, when words failed me.
+    </p>
+
+    <p>
+        With you, love feels calm, safe, and real.<br>
+        You are not just my Valentine, you are my home, my support, my forever.<br>
+        Every day with you feels like a blessing I never want to take for granted.
+    </p>
+
+    <p>
+        And yes… I’m trying something new with my tech knowledge just to impress you a little more 😄<br>
+        Because even after seven years, I still want to keep surprising you.<br>
+        I love you.
+    </p>
+
+    <p>
+        From your love ❤️
+    </p>
+
+    <a href="#" onclick="showMemory()">Our Memory 📸</a>
+</div>
+
+<!-- PAGE 3 -->
+<div class="box" id="memory" style="display:none;">
+    <h2>Our Memory ❤️</h2>
+    <img src="photo.jpg.jpeg" alt="Our Photo">
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("question").style.display = "none";
+        document.getElementById("message").style.display = "block";
+    }
+
+    function showMemory() {
+        document.getElementById("message").style.display = "none";
+        document.getElementById("memory").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
